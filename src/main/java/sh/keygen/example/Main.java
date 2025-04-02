@@ -18,12 +18,13 @@ import java.util.Base64;
 
 public class Main {
   public static void main(String args[]) {
-    String licenseFile = "-----BEGIN LICENSE FILE-----\neyJlbmMiOiJRbmVpZXZvMDl4clZWcXdMYm1MVCt0RU5wa1A5Z0ZqMlg2cmJZ\nNDFNZ0UzamlQZGVRRE9SZS8wZU5CbU9ZbnRvU3JHQzhUa1dYVzRQQWFoREdT\ncUR0WHhuQ3RTY09hRlJtMzI0M2w1TU8wNDlpaVE3RlZuaHlyeGNrb2loNUUx\neUdOSlMvN1VRcFhFTUNuaWwxTFVTL1BMWVk4dGlKQmV6bThqQlVGUVN4enRW\nVWUrMFVGelZLSW5VZ0VYY1dSQk1INHVlU3g4L1NibWkxY2twSWNES2hIajdo\nVnlrT0xFanNmMXpRb1FOY0pSejZHM0J2SHJmcHpJazZ0blppaVdGY3c4akp2\nR2pGNWpjOEl3ZGpxQjhaLzJmOGlHTi9YQm14RlNKWWZvOHJxSUZHVDZPbFZl\nOUpJMGRRZjVCTE1neStBWXU5K05nbE5mMlpLMFNkZk93aDFnN1ArNDEyRTBn\ncXJqcWUxUXNOOWRGZDFPcytuRjR1MS9sVklwMFp0RVdoUlQvc0U3MldRcGQx\neHdqenB5dEtNT2V0bG1reDVKVE03TldOVk15d1FoanRVbm5Zc0wwNTRLaURU\nTlZ5dmQ4RHBjTmViT2tpR0xzNVhUa1B2TWJWSkZGRlEvdk5Mam5qZVRucVF3\nS1lhNTkrdVdhZnlIYnVuUUt1cmNSRHJQQUZaZjFmSThzWHBXd2lGY0lQY3JJ\nZ3NwY0lQZVFuYTJJWUx0ZExOZnhrYlNzMmRVemphMWFvVGRPWVBYbVJDUVUv\nZGhqb0tCZTRzZERiL1VqR1FBZnFFVzB1V1pqbTNmR0c5SmY3RExROEZ2cTVw\nNnNLNCtpNjFSR3NVeXdxVFgydkdxM0ZyZmpGRlhuNTViUDJNQ2YvV1Awc3RO\nbFpOYWhPR2xFam9WY3dyeGFkOERBY2E4VGtqdXZ0RHdnakhvL2NmZnpsM295\nVjFWMHAvcVFGMTlOL0Ztc0Q3dXBuVWRjM1JMTmZFYkU1bmZLb0pQZTExVU82\nRHZCdThXTFhKS1U0Z2p0dTNFTVViaXpXTThYR1pjeTlOZWsxUVF2dFc3a294\nYXo4aTNBSEx0YWlnS2tQREVPdTJzbTJyN1dvWmpVcWhkUFpZdUNQN2UrZVh5\nb3NaSy9nbWZSZXU1WkJnV0dpcnM1eTdHRStSYnZlOWpSb2dnekEvSHc2aHA4\nQ1JWUG4vS2ZxUkdJOUdxd2gxbll2SXl2bE5OZXpHMzBqSTM0S1hYRU9DQTFs\nU3pxckhSSFZFc2VGWWlwZjd5TjZ3SjJoYk5zUkhmd3h2ZUFLSWZHUmo0Q0Ja\nNlNwVWcvVndQT2swblc5Y3grWWR2TkxUa1FjWm1Yc0xmYjNZUkszNlcyYUJB\nUXFCL3lMbXNRMjRvdHdjSlhLR2wwNzFoa0tVdXdzb0ZyUTdtZVU1dTNKQkpG\nVjdGeVJHSjNFcTZHdzZ1TFNGZDVhbGV6eGZXVmd6TXpsYzhQL1hjb1piZ3Bi\nZDJGRWhpQ0lqblQ1RzAwZEZENURsM0h1bjY0RFZpVGhmbFZmOHY4cURqakVE\naG9ER2ZSRlVqWEd6L3dDbGN2YjFZUnlHUW9iTGhqblcrek96Mlp6aTRtR1V3\nK0t0Y3dnOUNlZ1BRelI4MVp2V1g0WEc0UFBTUzV2V3g2aWVHMWpaTUZzRHBZ\ncUJrazR1NG85YkR3WFdLbFNkeVFYUlJKU2NtRmdUdnF2UUtmMjVHKy9DZFZY\nV2tQbmNMU0s4WTgrOHY2bHkwYW50WjJkQVVDRE9FWHAzL3hNOVlQZnlXb2Q5\neUhoRStuaUl5WDJ1S0hkZldLWE5uUDdiVFZRblczYVdUeGhRMmt0VjloS1F6\nTzdqOTRzamxoYnZMN2JTZU10OUZOVDRLKzd3VTdKaGNEU1oxV0Z3SEx6b0NO\nV2JiMjUrUGd4RWRRR0N1Wk5hZTZZbHlYMlY4QnhLdjA4NzRZNmx2Z0YxdVBG\nbnk0RXpSTUZBUGhiM2d3cG03dytLVlVOVVpmV1ZUcUltaHRPZFUxSzBpczNL\nbi9YRkoxQ2FRVnZxalVhVFhSTzY0aEFYMzlUWlRqam43REpFTXBZWk8wSHIv\nZENzZkZyRDVRanZSU1FTNTh4OWgxWFNua05GRzVTM1prNmFUVTlSOWVmU1h1\nVVVJblFqcDJCVjYzeHJ3STZWR1pHMlBFR3BoWTZZTVEyOFNtcVNMZ2JqUkVL\naWtFTXZUS0EwT2Vva3g2U1VvR0FWbUpEbXJZSHVIMjNTYUFweEt1YVNzUVMw\nSU4vVlFEeU1qNlZsMENZZE44K2lwd1lHZElYUFpCZkpzNlBDTnBkczVYTzI1\nSHFWZUVXRk5acitGNElTMmlRWGlEbkV6anozUk4zSWpGT2IzdnlzbkN6Zito\nVnRKWVNsOTRlYWhuOXhnOEN5TWV2c0IxREpTWFJPeGFwSVRqem9DTDloZXRU\nd1Z3Q0xCS2FEZWZqQUVmRUZYMm5raW5oSEpTeE1EWkM1Z0dBMThCYUdkQlJQ\nYUNNbzhhYWJlRFNXUXJIMFpjbjUwUlVCTVUwaTF5QlNnNGd0djZCTG5NdDQy\nOGxPSXJ4YUR6bm43VTEwbkFVOHlCN1YzQzV4aGxOL1d1OWpnMVhzcW9lanYz\nTm0vNjMzajRyR3g5SFQ4N1JFUG5zaTVIRzlLR0NHcVlhN2FxNmFjVzRCYmVh\nakVsb2xiK1lmbEVIeEU1M0JnVGVLQi9mMjVId3VWTk03bnVzWndENThkWXpj\nYzhBWnRSb0VOWmxuRWMrQk03VHZwbUJCNzhUQWFXUzBiaVVJUDZkcis2RG1u\nWjlmaS9NOFpOSng3cExPNmJQSGljT0ZIbW96WE03VDlnVkhrcVNIRmQ5T2F5\ncmorZ3ZVUk9lNTBxMGZITWlWRXNjamtxR2tCVFhaL1RHS0MvYVNUR05hZjhu\nWlQ0akFiM1ZmcENaWE80RElGWGwzTUc4R3FqTmZtbkZuZHl6aklYNEVEcUEr\nTU15UnJCRGNuK1kzbjJDRVNtYi95eVZTY2NiUmpFeU1RaFBjWUUrT3duV2Mx\nYksyMXR0eHNIZXF0S1IxbXI4bWlxbHk3S3NtaG5XNldxOVFBc096WW5DNW1s\nU0RjV2FrSkNWdEhHZitBTUl4RGtxb2lkYVZoaFRKWld1TUxKSTFqRUNvZzFL\nYkMzOG1aMXFmMXg4eXBraS9DZ3FUdC9CdGV0MmNYcGxNa1p0ZVhHak5CVkI4\nUEtma0NUMnNiYUlPVS83NTZJY0NmZ2NTQVM5SnJyQTNZc3JUaW9pNHBWM2NN\nR0tiMTdabEovYXVLV2UxVHVEMmJqUUZIYVVveFc3UzNMcGxFYVVwRmo0anAr\neDkza1Rmem5Ba1pQQTBMTFVEUzBHMkd2L1Y4WnBpenI2dGRFL3YyZVk4cGVR\nbVVVZzZNb3NqRVJWbjhyblVFS0pNTUw1aXpscjI0OWtTSTQ2eWk0QzVOL21G\nN2hYT0crN1pSMEVpeXlZdERONnNTZ1QxaUxGTGdrRDN4Lzh0bUo0T3Nua2ZQ\nY1FPL0xrV09hWHJKOCtJWjMyQjRwblZSczd4RW4vb3FiMHp1SG5rR3FSakRJ\nS2pNUUd0RTQzMzg2bjhqM0VBVkVmS0NKa3hPSWZQeVV3dm53MTRjbTVBU2JS\nc3QwZnB3ODhzRkw0UUo0MGtoS1hGSFNzQW14TmltMVdDZFY1aGloQ1daUXJT\ndmVaMW1wVDIxRWZZdHlzZz09LjNXbUx4UDFkT0ZEdmlwblEuK0FMeHNwOXo0\nUlpaR25lZTM5d1kxZz09Iiwic2lnIjoiTW0zckRNZ09SMURYUVc4S3ZJYnI4\nbGpxTGFGTzFleldqOUd3TnArNmNuTExkMXJIc2N4N2xpZXJSOFViUjZYM0Vy\nUDQ0blpxamJkeUcwL3hrOHVEQUE9PSIsImFsZyI6ImFlcy0yNTYtZ2NtK2Vk\nMjU1MTkifQ==\n-----END LICENSE FILE-----\n";
+    String machineFile = "-----BEGIN MACHINE FILE-----\neyJlbmMiOiJKTEVhNCtKS3ZxUVdodUFyNnlFaHRzc3dwYlloc3ZqalBmUHFV\nRTZxYnpZOW1WTkpZYUxVVUdhZ0kvV2p2M0RhZkx4dVJLSXBBQjJFRVlLalRw\nTml6bEdOem5sazZ6WXgrUEtySXVESmhiTS92ZERMdTRXNksvSjFMQmV0Z3hD\nWHpaVXM4MitBYVg5QVdtdEswYlNGeXlsUFNrKzkzMXhGUnVTRWZsRnJiSkVG\nd0pNczhGOFdVd2QzRHNwN3ZlQ1hKREo5bVY3NC9ra04rMXQzdXdCNUZDWjhM\nLzNHcXljM0VhR1JYakZuQ09jbGdYZ0lkUlgyWjB6eUNvR0pFdUYwS2R6WlFB\nRVlPRmNVVjFqTXBwVThrNkRQeFVKRk9BTERKYUZUdWFIK1QyVDMzVm14WDJr\nZnV1UmJGZ2E5MjNCakYwcFlEMnZ1enVGR0NoUGFrRm5XQ0Mva0dYZVlZSTlp\nYUxncmVXdnBCVlpqRDF2TWowRmlvcStzM2ViWXdWendtalFrMitmbHJrdTJ3\nUVFjOFVBMUhlS0FRampNTnhJRUZNbkdpelhmY21RZmhyZWs4RkVwKzV2NS9L\nRGJ5MFJRek5pVjVENHlJMlhsOGR4bXVoL2ZhN3QrQTJKUjlZVTNnZXZWMVo5\nZ3RGNlFPSXpWTjFPN01MSHRwY2F1dG9vdGV2ZVc0dUFqcVpJdDB6aHZ1M212\nbWQzcDRpcW1oVHFFYXhUU254amxVcy9aS0ZpU0tQYllqNmM1YUN4YzFYTytK\nclJjSmlVZTVaaUFmTHR3MHluSVJpOVpTZjdzaGZLNVV0N29OMHY3L25hbms3\nZHdONUp4U1J3TXhVVy81OU5HQW5yaXI3cGRIZWdqZ1RRREVHZWdVbVkzSDdW\nK1U5eTF5TElzMzRXbGJvZHgrcWlnRFdoemludzdiVldYOEtXanc2SFBmc2xJ\nbVBRRmNoRm1ZTkJJc01qOWxmbkplNUVVUWlDbUM5VjZuTUo2aEpsekxsK1Jk\nUXJhaFZSRVlEUHNHWlZkUFh5VllRQ0Z6ZmlOUkVOb0hSaW55MCtwak1XMlhZ\nMWp4NzZHNVRUUW0vMzhucC9DZUtnMUhiNktMazV1dGRHV0JmU1pwdmlBeXov\ndEZISmJLYXRsQmdPM3FCdXM2dW5oNTRtSjNCQ2xzVkRWTmFqLzhVbUltVGdt\nMjUyNjIvTUQ3UmFWU3BSMjV6R2lCTDYvNWlOTUcrNVRXSGw3dy9WS3o4Z0xn\nNmNodjJhRnVJem80UU5FUzF1VThIOFFiVFdmN2YvSjhTYTZxdlUxbzA1VExR\nSHNMT081cWhnLzZCaVAwNGxRRVRiODQzMDNDNlhyUHNmNGZoODlQUklkSE51\nOEdUL2FSUXlhNExoSmdjQ2krT1dzOXNtVHhueVVPM2VDbWprdWhPOE5aT2Y4\nZUV2eldNREVQOGd4QjRXYUZVZk1GaGVMVWxZODRMdDBDZW1IcDdVWU8xT3A5\ncnE0KzJNSDgyb3o4WlBJZTJsUkJoTFdHdjNhTGM2RzN6QVZHM2tzMk1EaGgy\neDc4ZG5NV3hBTC9rZ3VLcVF2cG1rdmZrbGJMZVVicXE0VmNIUGYvMytGUzNM\nM1BKUUVwSE4ydDhLcFZEalpuaXZZM3o1OUZBdGIzWEhPNWtxTHNLRTc1Vkc2\nNFBDRmg4TFRPNVBra3lMRkQ0RXJIdjZBOWxGYzVYZ2RXUHRucGxaemwwKzNT\naWJOZDdPb1U0eGVGTkFJVW55b0tyTkFnUStHczk3Sk1iT2d3YlNtSHRaMC9X\nVnFHRGJBc1d6OFdjRDcvQW9WUXQ3aUd2NzlEUElzaFRIMUhOTnJIMUNVWklk\nVi84SXJ2clVQUGg4RWh4WWtIbnYxMXRuZU5HK0ZpWVgrcTZuYlJPNk1KclJK\nS3pCd0FlU3FxWWV6TkR2UFprUk4yUjRNSGhqT3l2MzNUQkUyUGMwY1Nlck9m\nWnFyaitaR1QxVTNzdDZEWGdESEhOSnJyaVlzbnlPU2crTkp4SUYzQ1VHNURN\nbWVFSlBTbVhqMGhIS2poYjVmcG5IR0FtZUQ3bnErdzhsaWF2bE16eE0vZGtn\nVWpZb0pNeExiVTdNR3Zad1lsNHE5NjM5RHhzbmU2RThWNWFEODk1ek1wdzMr\nQXB4MUNDR00xYXFPSWF1cG1WMGVxSkFXbjVHdFRybUFFa2VIajQ5N3BlRzZx\nZ1QyWCt4aVVCYXFwMUJmeE1SVE9LV1J4OTBPT2VTTng1R1BVakhRcGRTVFho\nTVBkN1FzdGV6LzdmQVpoNGpaanZLUzRldXFVUExnTnk3eXNQVUNMWktaQ1Ns\ncE1xWHllK0RIdDBVcDE2Q3FzRDc5dVJneXBEV2tFN1ZzUm0zV2dORE90MmFn\nSENtalBjQVRWTE8wWk5MZ1VZU1Jjd29BYU14VXRpbFJMeTRoc2RObWVQdUFX\nSW9YUDdXdk1XT3U3N0N0SzdZNUNTZkxuUjFHMFU4Rzdoci9pMVY1N0o3RFpF\nc00vakFaMEJacUo0bFZpMjFWU2VHaDlpMFJldksxYnEyakp5cHRGVUJlQWli\nU1pVVVdTMXdxbHJFSHNKbFNyNVgxRWdISzNqSnJhUC9sRGsycnh6VTFQcURu\ncSsrTkRWYTZCNkVGY0JGc3c3UlFYREtvbGdaZHJiNWFHSlVMN29ITXJPZUFo\nZXM5MUZkUFNlb0xjbGowUEpxL0w2SS8vcGhxenhxUGFweG9nRVBrK2FaY2lN\nTmwyQXU1ZCtGWXZrUWxaOHdDY1pSUEVkKzc2M3ZUanlGYWlnQVNTUHZmQmxK\nSE9JSXN2ZXVCRTJTb3hJeEEyNDNDTklTUFVCYTY0cVhyUzBOL0xLcXBVcDN4\ndHU2czZwbnJKT0p1WmxzN1FFK2FTaGQweS9Ibk1tSFdvNnQvd2ZoNDFySUFM\ncFVON3ZLdEJaZFJhRG91dUlsMWJyK0hCbm05Sm8zWmdOUmdDdFZ0T0hNTlVn\ndk9ZMldkWE40ckJXdk90ZTNERU5EbTBqTlNiYUVpMmtJMEtvYW14QTJka0NZ\nMTgrUjdDRzhuQWVLS3F6eHFOcDRMaWd2VlV6REx4bCtPb1Y2b1puTEJ6MFll\naWJCdGdscVhjcW1LaS9GdTljandlaEJTYmJ4VkZmK2h3RGkyaFR5YTNLbDNi\nU0JNSWdNajF1ZGJ1QnJ4Mmx6V3JYcTRVekxleDl5aGJhdVFwUFRTVlhWVnFG\na3pIZFNZOG1Mby8zTlFOZFJvclJuVzF1U2pMeHc2Nm01MGJOQXRlZ0xRcEpC\nbG1RVnVtTUtrTDR4MzM0WGVWT1ZwbndNQVhzTGMwdDVGTUJFdWVvLzhUZDdO\nWlZEOVNlQTVvOXZaajQwU0NJczRJR2FEODcvSEpJWTN4WmZKQ0pWQU5mUVBB\nMW9QTTEva2FsV1JuMnZRbVZ4R0VtZStyc01hejNBeXFiTkVXbkdIMVF1Vy9R\naXFYRkF2NERRQWFsMnRkZVhNblpRWDE5TUNOb1Fkb3k4WjJUbkVuZFNiNDhq\nTWJDdFZpb3BrdGlCcUhYOVZONVVkVEszQitNcTBYS01NV0o0THE5T2JPbkVS\nOUUvN0tLbFp4bnRWUC8zanBsVVVBQTVOOU5zR1lqT1ByTGJKTTVXdU8vMDFp\nNUt2TUlsYUovYWY4dHlJMVBlVjl2UW5acEthaGQ4NWVaK3V4ZHR5VkgwRzNu\neTVrSlN1RnJZVnFTbENkOWNjYXVYa0loU01uL3FuL3pPRjdFREswZkZZdjdQ\nZDNpZmwvc2ZhdEdDalowUk1sUmtveUU2M1U1N1U2cHFwT0xlS1I5bFUxelVQ\nZG40Q0p3b0lUWXYzL2cyOTFrY2RNSHc2b0hibVp4dGV5V2J1OTFvZWNUZzF5\nMXFzNGV4UzhXQjVramZUSjdyeFUzdXdtT2ZYQThuT3V5YWtFQWxiVE15RVN4\ncFBseFhsQ1hLb3EzZFVzRkxTNldUeko3WHJxek5rcDRGUm9nT1JvU1NmMDJu\nbFpCWUphY2RXeG9IWldsdFhMck0xUkcyUFpHYW1OcU50Vlh5KzBpMFVEa01R\nRDdzNFR2RGh6d1lKeUlSUlc4WXJrT1laWE1ZN25zVGh2L0d6TkhmNUU1V3Iv\neDRTQTg1aCtZbXU0YVRxbUpESXN2dEhYNnV6OTFQdElWc0VYNTU1eUZZNmty\nZjd4djRPcmNjL3BRYVFVY2UrRWZUL0tiQmNGcWwvbUFEemtGVUoxSW8xNitT\nd1o0azZYcWxqMm9uWDRMNStuZVU5VGJMTTdhZnhzaVFXWmY0UkFaZnk1UkdJ\nUTltUDd1aFFEdkh5RCs3Vk5Ddk5JU2pqRDRyZXVDMVpieDFVbTNlbWphWjE4\nOEsyYVhzYVBmZ2NrQll5MEV4TzVuU0tOZUVGdkVLOEVCaHVUQi9BMXBNOUY5\nT1Job0sxcnVyWWovNTN1Vm9ZOFc4NWVpVE5wdmEwUitKOUFaWGZtQm5kc25o\nRVZCdGJGTndxbzJDeUk0eDdWNTFEclNzdDVWcnplOW4yNzlGUldrbVJiV1Ew\nRjVIVTh1YlhiYk1FV0p3Z2RMaHUrWmcwbmxoYURPbi9TN1kvb2wwZGt3U1hM\nb1ZRSkhVMlpjMWJMWG5mQ1dQOHFKU25KYmVja243bEFxUzhzU3I2NXU1RitN\nekFkdGxuTGM2MG51ak5QZ0ZjU09kY0lpRExpVGlpRDdyTkYxZU1vYlMrbHlJ\nZGNYMEIxM1J3WmZ2MlZFOVZxRnBwMnZBWDcxOTlVSW1aN2VLZmxSMm9zT3V5\nbWkzWndSaVZySW1jbk5yQm0rWEpQMVZyWmQ1T1QycUkxdWRPbmg1NVF2dUJ2\nSEtTVThrL1hqRzVreEJtN0Z5Q1FUTzRvMldleGgySmtodFlkRERGblo3bjJN\naTNTdjd0eGJyMlJIWEw2VWJoSENKUzNlYXUrUzRHMU1FVVRzNlNjYk1DTmUr\ndEZkdzlxUnJoUUpjZVVKa1hQZzFXZk1IZ0k5SkE4RmpPK1h5N296RXF3QU01\ncXVuQmRjdjc4VU9zanYzc3BJSFdScjNtY2t4WnU3QVpDSTlqa29pcWJMMjg5\nMmxoUDhMUHJjcXNoZkdNNEhsY09qb2VXdXpaZk9wRWxTcENQOWJwQysyTngv\nUmZRZE9aUytGM3A3WEZuZzJSenFydDhDN1FDZ0FCcW94WDlqQVRQdEdnclZY\ndy8wWThnL1RGemZIeDdYUEN3OXc2S0dFOVU5REptU09aQ2xLb2lXUk5uSGF2\nVDdHR2EyTUI1bmhGSnFMbG9KdkM5TEJCbm9kTU1rUmFQSE9mdmJMempLaTlG\nNHQ5bjZwNnNWYUoyN1hTMmNMVnVzaVF6SzVUa0JSaHVSTlQrN3NSWDZzNXE0\nZmQzOVFoYXVzYmlzUXp4N25DWkt3STg4L0psQW96ZGpKbkpjMnhZSSs2dnlM\nSDdJVUc4cjNwdW9zSWtnTVFzeVMzSGxoemlrRzZWb001VVQ3S0luNFNKeWhI\nOHF6SGgrM3Nlc0tGazVUb0x0aVBPMDYyWTFjakNLMlBGRHhNa2pkWnJzM1pR\nTUR1MXBadUhmS29salZQRDJqT0dnRVlzU1huby93a2xjK3dxUTZBamhrRDlD\nTElRSjM4QW5tWEFCa0Z2ZFVUc2lHbXVNQ1Y2ZEJtVVFNQTJ2bW1Vc0FqT2l6\nMEtOL2s4VS9WNXhrUDUwb0xvQzdCUVo5QWxBTTJLeEJSRVRGeTluQ1FXNWgz\nY055WUwxUGg3VXkveWxpOFMxYjJTUmdwUjRBRHVSNEJpMjZFaGQwZUZVZEJD\nUFkwSE1FZjd4MGNxRmNpcHQ2cFBJUzg3ajNtRC9FeDVBYlFDVnl4Q0picmsy\nbUlnbGhaTHZQNEZ4a0RWTlpTUHdFa09lbFhBWkt1eUUxREkzQWQvaUxBMTNF\nNjI4OWVLWkRqK2ZJMlhXNGVxb3F5Q0JtRUV3dE5SS05wRDNHbzVWai8xTXBj\ncUZobi9INkszVlpPNUVtTG5idFZtb2cvdzB6b1g5cGhaZ1hvQ3NXdU42dWFW\neWpsQ25JQk8rRnBXam53NGdzTzZhZmFETTdmRUthbzFBNERER1lSbHVtM2JK\nMFk1TTQwSElleGVhM1Q0THFsYzhoQkh5TDdaMlltWFU3VlR5UVB6akhxTmlV\nUElyT3U4WTdkTElmOElQeHhDRzR1MldBUlJlOFVaaE9EVE9zUlQ0M0FKK0dV\nSHRJbTdWaTY2N1cwMnVaNGp2eWdESWhKK09pVy9rYWcwVlQzalAyYW9Ebk8v\nemQ4MFJPMVlxRGpqWFhrRUhHbzZTWTdsZSs5RnM5eFcyWmZMa1ViTjFKMTVp\nZTUrcGRIMjBFbEdKSXpwR1ZnOEM2VkZqcmJ4djBKMUdsQ0FxRDFzRyswck9k\nd1VyL1N6a0IzSUN6YWpMS3lpVlpsc3lhRVhmSFk1WEpRQ3dwWStuOU9BMUtu\nemNrZ3lzQ1JGTUdTTVRORUFRU0w5MkkyRXRGeWQ0TUlJTUo3ckxwK1VWbWZW\nSFpadmpITmZ6TldwaGhKTUJ1TnlwanorT2RlOGRnYnc5SnhuNkxKTmhnbDlw\nZlpEMVREUFdPbTRKRXl5ZER6czE0M0NtOFJubHNXRkVsSzNnN1F5d0cydlR1\nRGMybStrOURsRTY0bXBRS2kreDlxMUh3bGliRWtxbldZWWNPaThIbTg0RXlr\nQktuUTNhMUNGSG1MbUI2N0pLa1U1V0FCVDFDcTZ4Rmlzd0s2KzhvU1dmQUkv\nTzlKZEJNVU9UQjM2enpSYnROVktCSmVEUHQwMUtMeGY1c3I2cHhDd0NpWmg4\nQXhLMmNGQ0RuVFJLa3NWYktPTWRvTFlGNUVTN1RYN1lBbjZMRFNyUUIwMGoy\naXc5VGFuS2Y1YTg0dU1yQ0c0cVp5K1FCc1RpUWo3MDByQjUwdzdGdU1ISERI\nWksrSWNVY3NEU3VybWY5RFR6VFpUSzcyc2FEZ2tib0dTSnJ3eEo5NkRLRnJa\nbldxWG44OXEwamhTRlBRZC9xZS9saUFMMEJDMUJCbExwVmU2Z3k2R1FadmZQ\nUllaR3VmT2wzb3JndkMraEcwSGFIaitQZGZkN2VoNkFoYzY0cjRvckZ0cUdZ\nQVExdkh6Wm96TFFkNS9pa3Bsalg3ZGEwQWh0NXREcVZxazBwNXVtem1WMzhO\nNC8zVEUvNlFwdzJuUndNcjFLeGhQU1dZd1c0YkYrT0RjbWl6L0R4VWEyYzd3\ndUN4RmVQeDRqT29vNDl3dDFJV0VUVllRNWNzdHhTYm9uVVlpS2JVeXNpYVVC\nVkxreGxLQ2hlTVBSTmNoQ2NDeUV3Q2NzaEJ6VGZlajFaRkFQdEZHalhRSWJi\nQm1EcUVnTTg4dDRrSGZjTUcuMk5CQzhNd08veHlxM2xvTi5XWENBWU9OWEpS\nbmZreWVVY2MvQ2d3PT0iLCJzaWciOiIvckFWK3J3YWJUTFI0cG5URVJ2cFZ6\ndVpId3IrZWJXK3JIaFczdFp0blpZK0Fkdmk0SWY2N290d2U5eVVTUVpVYnVu\neUpUSCtBcitMek9sbUVhdk5Edz09IiwiYWxnIjoiYWVzLTI1Ni1nY20rZWQy\nNTUxOSJ9\n-----END MACHINE FILE-----\n";
+    String machineFingerprint = "c4:af:69:1a:ee:55:f1:b5:a4:09:fd:74:d3:1f:94:f0";
     String licenseKey = "33362C-D254BA-F54C3C-DAAE48-C71975-V3";
     String publicKey = "e8601e48b69383ba520245fd07971e983d06d22c4257cfd82304601479cee788";
 
-    // Parse signed license file (removing cert header, newlines and footer)
-    String encodedPayload = licenseFile.replaceAll("(^-----BEGIN LICENSE FILE-----\\n|\\n|-----END LICENSE FILE-----\\n$)", "");
+    // Parse signed machine file (removing cert header, newlines and footer)
+    String encodedPayload = machineFile.replaceAll("(^-----BEGIN MACHINE FILE-----\\n|\\n|-----END MACHINE FILE-----\\n$)", "");
     byte[] payloadBytes = Base64.getDecoder().decode(encodedPayload);
     String payload = new String(payloadBytes);
     String encryptedData = "";
@@ -37,13 +38,13 @@ public class Main {
       algorithm = (String) attrs.get("alg");
     } catch (JSONException e) {
       System.out.println(
-        String.format("Failed to parse license file: %s", e.getMessage())
+        String.format("Failed to parse machine file: %s", e.getMessage())
       );
 
       return;
     }
 
-    // Verify license file algorithm
+    // Verify machine file algorithm
     if (!algorithm.equals("aes-256-gcm+ed25519")) {
       System.out.println("Unsupported algorithm");
 
@@ -52,7 +53,7 @@ public class Main {
 
     // Decode base64 signature and signing data to byte arrays
     byte[] signatureBytes = Base64.getDecoder().decode(encodedSignature);
-    String signingData = String.format("license/%s", encryptedData);
+    String signingData = String.format("machine/%s", encryptedData);
     byte[] signingDataBytes = signingData.getBytes();
 
     // Convert hex-encoded public key to a byte array
@@ -68,12 +69,12 @@ public class Main {
     // Verify the signature
     boolean ok = verifier.verifySignature(signatureBytes);
     if (ok) {
-      System.out.println("License file signature is valid!");
+      System.out.println("Machine file signature is valid!");
 
       // The decrypted plaintext dataset
       String plaintext = "";
 
-      // Decrypt the license file
+      // Decrypt the machine file
       try {
         // Parse the encrypted data
         String encodedCiphertext = encryptedData.split("\\.", 3)[0];
@@ -88,15 +89,17 @@ public class Main {
 
         // Hash license key with SHA-256 to obtain encryption key
         try {
+          byte[] machineFingerprintBytes = machineFingerprint.getBytes();
           byte[] licenseKeyBytes = licenseKey.getBytes();
           MessageDigest sha256 = MessageDigest.getInstance("SHA-256");
 
           sha256.update(licenseKeyBytes);
+          sha256.update(machineFingerprintBytes);
 
           key = sha256.digest();
         } catch (NoSuchAlgorithmException e) {
           System.out.println(
-            String.format("Failed to hash license key: %s", e.getMessage())
+            String.format("Failed to hash license key and machine fingerprint: %s", e.getMessage())
           );
 
           return;
@@ -125,18 +128,18 @@ public class Main {
         plaintext = new String(output);
       } catch (IllegalArgumentException | IllegalStateException | DataLengthException | InvalidCipherTextException e) {
         System.out.println(
-          String.format("Failed to decrypt license file: %s", e.getMessage())
+          String.format("Failed to decrypt machine file: %s", e.getMessage())
         );
 
         return;
       }
 
-      System.out.println("License file was successfully decrypted!");
+      System.out.println("Machine file was successfully decrypted!");
       System.out.println(
         String.format("> Decrypted: %s", plaintext)
       );
     } else {
-      System.out.println("License file signature is invalid!");
+      System.out.println("Machine file signature is invalid!");
     }
   }
 }
